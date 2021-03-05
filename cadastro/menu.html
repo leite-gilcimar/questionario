@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!-- Required meta tags -->
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   <title>Criar Questionário</title>
+</head>
+<body>
+  <div class="container">
+    <div style="margin-top: 20px;">
+      <div class="card" style="width: 20rem; margin: auto;">
+        <div class="card-body">
+          <h5 class="card-title">Questionário</h5>
+          <h6 class="card-subtitle mb-2 text-muted" id="qtdQuestionarios"></h6>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            <div id="js-navigation">
+              <a class="btn btn-link" href="./novoQuestionario.html" role="button">Criar Questionário</a>
+              <a class="btn btn-link" href="./criarPerguntas.html" role="button">Criar Pergunta</a>
+              <a class="btn btn-link" href="./fazerQuestionario.html" role="button">Fazer o Questionário</a>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="form-inline">
+              <span>Quantidade desejada</span>
+              <div class="form-group mb-2">
+                <input min="0" class="form-control" type="number" id="qtdDesejado" />
+                <a class="btn btn-primary" href="#" role="button" style="margin-left: 5px;" id="iniciarQuest">Iniciar</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div id="js-content">
+      </div>
+    </div>
+  </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="./js/index.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+    <script>
+      $(document).ready(() => {
+        //$("#js-content").load("./criar.html");
+
+        $('#js-navigation a').click((e) => {
+          e.preventDefault();
+          $("#js-content").load(e.target.href);
+        })
+      })
+    </script> -->
+</body>
+</html>

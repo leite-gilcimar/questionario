@@ -1,0 +1,13 @@
+{
+  "nextId": 3,
+  "usuarios": [
+    {
+      "id": 1,
+      "nome": "Helena das Couves"
+    },
+    {
+      "id": 2,
+      "nome": "José da Silva"
+    }
+  ]
+}
